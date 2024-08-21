@@ -3,6 +3,7 @@ import "./Heroimgstyles.css"
 import React from 'react'
 import heroImg from '../assets/intro-image.jpg'
 import { Link } from 'react-router-dom'
+
 const Heroimg = () => {
   return ( <div className="hero">
    
@@ -15,9 +16,9 @@ const Heroimg = () => {
     <h1>React Developer</h1>
     <div>
 
-    <Link to = "/project" className="btn">
-     Projects
-    </Link>
+    
+    <Link to="/project"  className="btn">Project</Link>
+     
 
     <Link to = "/contact" className="btn btn-light">
     contact
@@ -31,4 +32,4 @@ const Heroimg = () => {
   )
 }
 
-export default Heroimg
+export default Heroimg;
