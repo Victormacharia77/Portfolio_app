@@ -1,22 +1,36 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
-import "./index.css"
-import Home from "./routes/home"
-import About from "./routes/About"
-import Project from "./routes/Project"
-import Contact from "./routes/Contact"
+import "./App.css";
+import "./normal.css";
 
-import {  Routes, Route } from "react-router-dom";
+
+
+
 function App() {
 
   return (
+    
    <>
-   <Routes>
-       <Route path="/" element={<Home />} />
-       <Route path="/project" element={<Project />} />
-       <Route path="/about" element={<About />} />
-       <Route path="/contact" element={<Contact />} />
-   </Routes>
+   <div className="App">
+
+<aside className="sidemenu">
+      <div className="side-menu-button">
+        <span>+</span>
+        New Chart
+      </div>
+</aside>
+
+<section className="chatbox">
+      <div className="chat-input-holder">
+        <textarea  rows='1'
+          className="chat-input-textarea" ></textarea>
+      </div>
+</section>
+
+   </div>
+
+   
+   
    </>
   )
 }
