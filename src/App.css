@@ -32,24 +32,68 @@
     padding-left: 6px;
     padding-right: 12px;
 }
-
+/*
 .chatbox{
     flex:1;
     border: 1px solid white;
     background-color: #343541;
     position: relative;
+    
+}
+
+.chat-log{
+
+text-align: left;
+display:flex;
+justify-content: center; 
+
+
+}
+
+.chat-message  {
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 100%;
+    
+}
+
+
+.chat-message-center{
+    width:100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 12px;
+
+    padding-left: 24px;
+    padding-right: 24px;
+    
+display:flex;
+}
+
+.avatar{
+background: white;
+border-radius: 50%;
+width: 40px;
+height: 40px;
+display: flex;
+align-items: center;
+}
+
+.message{
+    padding-left: 40px;
+    padding-right: 40px;
+   
 }
 
 .chat-input-holder {
-   padding: 24px;
-   position: absolute;
-   bottom: 0; 
-   left: 0;
-   right: 0;
+    padding: 24px;
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+    right: 0;
+ 
+ }
 
-}
-
-.chat-input-textarea {
+ .chat-input-textarea {
     background-color: #40414f;
     width: 90%;
     border:5px;
@@ -61,4 +105,81 @@
     margin: 12px;
     outline:none;
     box-shadow: 0  0 8px 0 rgba(0, 0, 0, 0.25);
+}
+*/
+
+.chatbox {
+    flex: 1;
+    border: 1px solid white;
+    background-color: #343541;
+    position: relative;
+}
+
+.chat-log {
+    text-align: left;
+    display: flex;
+    justify-content: center;
+}
+
+.chat-message {
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Center the content inside chat-message */
+    padding: 12px;
+}
+
+.chat-message-center {
+    width: 100%;
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+}
+
+.avatar {
+    background: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 4%; 
+}
+
+.message {
+    
+}
+
+.chat-input-holder {
+    padding: 24px;
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+    right: 0;
+ 
+ }
+
+ .chat-input-textarea {
+    background-color: #40414f;
+    width: 90%;
+    border:5px;
+    padding: 12px;
+    color: white;
+    font-size: 1.25em;
+    border-color: none;
+    border: none;
+    margin: 12px;
+    outline:none;
+    box-shadow: 0  0 8px 0 rgba(0, 0, 0, 0.25);
+}
+
+.chat-message-1 .message {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Styles for the second chat message (Replica) */
+.chat-message-2 .message {
+    background-color: rgba(0, 255, 0, 0.1); /* Change background color */
+    color: #00FF00; /* Change text color */
 }
